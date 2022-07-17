@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>What are we eating?!</h1>
+        <h2>Input some options below and let the universe decide.</h2>
+    </header>
+    <section class="column">
+        <form class="column-form" id="mealDecider">
+            <div class="selections column">
+                <div class="textInput">
+                    <input type="text" placeholder="Put something in me" id="food"> <!-- Adds free text functionality. Need to sort out how to query both options while ditching empty/null/undefined options -->
+                    <!-- <select id="food">
+                        <option value=""></option>
+                        <option value="McDonalds">McDonalds</option>
+                        <option value="Chick-Fil-A">Chick-Fil-A</option>
+                        <option value="Taco Time">Taco Time</option>
+                        <option value="Arby's">Arby's</option>
+                        <option value="Convington Teriyaki">Convington Teriyaki</option>
+                        <option value="Jersy Mikes">Jersy Mikes</option>
+                        <option value="Del Taco">Del Taco</option>
+                        <option value="Panda Express">Panda Express</option>
+                        <option value="Wendy's">Wendy's</option>
+                    </select> -->
+                    <h3 id="added"></h3>
+                </div>
+                <div class="row buttons">
+                    <button id="submit" type="reset">Submit to the cosmos.</button> <!-- type reset only clears the text box wsithout clearing the stored array-->
+                    <button id="decide">Time for fate to decide!</button>
+                    <button id="blank" value="reset">I wanna go back.</button> <!-- value reset acheives the same result as the forms[0].reset() function in js file. Clears stored array-->
+                </div>
+            </div>
+        </form>
+        <div class="text">
+            <div class="list-options">
+                <h3 id="options"></h3>
+            </div>
+            <div class="outcome">
+                <h3 id="result"></h3>
+            </div>
+        </div>
+    </section>
+    <!-- <form id="emptyForm1"></form>
+    <form id="emptyForm2"></form>
+    <form id="emptyForm3"></form> -->
+    <script src="./assets/script.js" rel="text/javascript"></script>
+</body>
+</html>

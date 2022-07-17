@@ -1,0 +1,112 @@
+:root {
+    --white: white;
+    --dark: #272d60;
+    --meddark:#525780;
+    --med: #7d81a0;
+    --medlight: #a9abbf;
+    --light: #d4d5df;
+}
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    line-height: 1.75;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    background-color: var(--medlight);
+    width: 50%;
+    margin: auto;
+    margin-top: 5rem;
+    border-radius: 25px;
+}
+
+header {
+    padding: 2rem;
+    background-color: var(--dark);
+    color: var(--medlight);
+    border-radius: 25px;
+}
+
+form {
+    padding: 3rem;
+}
+
+.textInput {
+    padding: 1rem
+}
+
+input {
+    padding: 0.25rem
+}
+
+button { 
+    padding: 0.5rem;
+    margin: 0 1rem;
+    background-color: var(--dark);
+    color: var(--white);
+    border-radius: 10px;
+}
+
+#added {
+    font-size: x-small;
+    color: var(--meddark);
+}
+
+.text {
+    display: flex;
+    flex-direction: row wrap;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+}
+.list-options,
+.outcome {
+    width: 50%;
+    color: var(--dark)
+}
+
+
+@media screen and (max-width: 540px) {
+
+    body {
+        /* width: 100%; */
+        margin: 0;
+        font-size: medium;
+        height: 100%;
+        width: 100%;
+        border-radius:0;
+        font-size: medium;
+        line-height: 1.5;
+        /* flex: 1 1 100%; */
+    }
+
+    header {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        padding: 2%;
+        font-size: medium;
+    }
+
+    .text {
+        flex-flow: column wrap;
+    }
+
+    .list-options,
+    .outcome {
+    width: 100%;
+    font-size: x-small;
+    margin: 2% 0;
+    }
+}
