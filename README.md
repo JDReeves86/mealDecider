@@ -23,7 +23,9 @@ Using javascript and some real basic HTML/CSS I created a tool to settle these d
 
 Easy.
 
-In the event that you submit blank options or attempt to have the app truly make something up by not giving it options you will receive alerts prompting you to comply. JS will also reject empty options into the array should you leave the text box blank by accident upon submission.
+In the event that you submit blank options or attempt to have the app truly make something up by not giving it options you will receive alerts prompting you to comply. JS will also reject empty options into the array should you leave the text box blank by accident upon submission. 
+
+Lastly, there is an "I wanna go back" option that clears out the array and resets the form to start over.
 
 ---
 
