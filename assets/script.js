@@ -17,7 +17,7 @@ const startOver = document.getElementById("blank")
 
 submit.addEventListener("click", buildArr)
 decide.addEventListener("click", mealDecider)
-// startOver.addEventListener("click", mealForm.reset()) ## Resets the entire form and clears the array to start over.
+//startOver.addEventListener("click", clearOptions)/## Resets the entire form and clears the array to start over.
 console.log(document.forms[0].id)
 console.log(mealForm.id)
 
@@ -45,6 +45,8 @@ function buildArr(ev) {
         added.innerHTML = "Option added!"
         options.innerText =`Your options are: ${restaurants.join(", ")}` 
     }
+    food.value=""
+
     console.log(restaurants);
     // document.forms[0].reset(); resets the form while preserving the array. 
     //
@@ -52,7 +54,7 @@ function buildArr(ev) {
     // @ the global scope? Is it because when placed in the fuinction the clear forms command only affect the text field?? Has same id value at the global and local scope. ***
     //
     //
-    document.querySelector("form").reset();
+    // document.querySelector("form").reset();
 }
 
 // Once array is built by submitting options, this will iterate over the built array populated with the options
@@ -74,9 +76,9 @@ function mealDecider(ev) {
 // Function that clears array and starts the process over. effectively useless and verbose compared to other methods, but I can do it, so I did.
 // function clearOptions(ev) {
 //     ev.preventDefault();
-//     restaurants = [ ];
-//     result.innerHTML = " "
-//     added.innerHTML = " "
-//     options.innerHTML = " "
-//     document.forms[0].reset();
+//     // restaurants = [ ];
+//     // result.innerHTML = " "
+//     // added.innerHTML = " "
+//     // options.innerHTML = " "
+//     document.querySelector("form").reset();
 // }
